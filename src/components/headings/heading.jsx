@@ -1,19 +1,22 @@
 
 
 
-const MainHeading =()=>{
+const MainHeading =(prop)=>{
+    const{heading}=prop
     return(
         <>
-        <h1>Welcome User !!</h1>
+        <h1>{heading}</h1>
         </>
     )
 }
 export default MainHeading
 
-export const SecondaryHeading=()=>{
+export const SecondaryHeading=(prop)=>{
+    const {heading}=prop
     return(
         <>
-        <h2>Welcome User2 !!!</h2>
+        <h2>{heading}</h2>
+        {/* <h2>Welcome User2 !!!</h2> */}
         </>
     )
 }

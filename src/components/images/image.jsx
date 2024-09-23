@@ -1,10 +1,14 @@
 
 
-const CustomImage = () =>{
+const CustomImage = (props) =>{
+    console.log(props)
+   
+    const{source,width=200,alternateText,height} = props
     return(
-        <>
-       <img src = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" height={100} width={100}></img>
-        </>
+        
+    
+       <img src = {source} height={height} width={width} alt = {alternateText}></img>
+        
     )
 }
 export default CustomImage

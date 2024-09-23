@@ -2,12 +2,18 @@
 
 
 
-const CustomList = ()=>{
+const CustomList = (prop)=>{
+    const{List}=prop
     return(
-        <ul>
-            <ListItems/>
+        <ol>
+            {
+                List.map((eachFruit,index)=>{
+                    return(
+                    <li key={index}>{eachFruit}</li>)
+                })
+            }
 
-        </ul>
+        </ol>
     )
 }
 
@@ -25,11 +31,14 @@ export const CustomOrderList = ()=>{
 }
 
 const ListItems =  () =>{
+    const Fruits=["Apple","Banana","Kiwi","Mango","Orange"]
     return(
         <>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Mango</li>
-        </>
+        {
+        Fruits.map((eachFruit,index)=>{
+            return <li key={index}>{eachFruit}</li>
+        })
+    }
+    </>
     )
 }
