@@ -8,105 +8,30 @@ import CustomImage from "./components/images/image.jsx";
 import { recipeData } from "./data/recipedata.js";
 import Greeting from "./components/greetings/greeting.jsx";
 import CustomButton from "./components/button/button.jsx";
+import LoginComponent from "./components/loginprop/login.jsx";
 const App = () =>{
-  // const imageList =[
-  //   {
-  //     name :"bag1",
-  //     src:"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-  //     width:100,
-  //     height:200
-  //   },
-  //   {
-  //     name :"bag2",
-  //     src:"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-  //     width:200,
-  //     height:200
-  //   }, {
-  //     name :"bag3",
-  //     src:"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-  //     width:200,
-  //     height:200
-  //   }
-  // ]
+  const type = "GUEST"
   // return(
-    // <>
-    {/* {
-      imageList.map(eachImage=>{
-        return <CustomImage source={eachImage.src} height ={eachImage.height} width ={eachImage.width} altnativeText ={eachImage.name}/>
-      })
-    }
-    {/* <CustomImage source ="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alternateText ="bag" width ={100} height ={100}/>
-    <CustomImage source ="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alternateText ="bag" width ={200} height ={200}/> 
-   
-   <CustomButton text="Login" onPress={()=>{}} bgcolor="green"/>
-   <CustomButton text="Order" onPress={()=>{}} bgcolor="yellow"/>
-   <CustomButton text="Signup" onPress={()=>{}}/>
-   
+{/* <> */}
+  {/* <LoginComponent isAdmin={false} />
+  <LoginComponent isAdmin={true} />
+  <LoginComponent isAdmin={true} />
+  <LoginComponent isAdmin={null} /> */}
 
-   <MainHeading heading="List of fruits"></MainHeading>
-   <CustomList List={["Watermelon","Kiwi"]}></CustomList>
-   <MainHeading heading="List of cricketers"></MainHeading>
-   <CustomList List={["Dhoni","Virat"]}></CustomList>
-   <MainHeading heading="List of Vegetables"></MainHeading>
-   <CustomList List={["Carrot","Potato"]}></CustomList> */}
+  switch (type) {
+    case "ADMIN":
+      return <LoginComponent text ="Admin"/>
+      case "USER":
+      return <LoginComponent text ="User"/>
+      case "GUEST":
+      return <LoginComponent text ="Guest"/>
+  
+    default:
+      return <LoginComponent/>
 
-
-{/* {
-  recipeData.map(eachrecipe=>{
-    return(
-      <div key={eachrecipe.id}>
-        <MainHeading heading={eachrecipe.name}>
-
-        <SecondaryHeading heading={"Ingredients Required"}></SecondaryHeading>
-
-          
-        </MainHeading>
-        <CustomImage source={eachrecipe.image} height={220}></CustomImage>
-        <SecondaryHeading heading={"Ingredients Required"}></SecondaryHeading>
-        <CustomList List={eachrecipe.ingredients}></CustomList>
-        <SecondaryHeading heading={"Instructions Required"}></SecondaryHeading>
-        <CustomList List={eachrecipe.instructions}></CustomList>
-
-
-
-      </div>
-    )
-  })
-} */}
- const clickedme=(eachname={name:"random",role:"none"})=>{
- const {name}=eachname
-  alert(`i am clicked,my name is ${name}`)
- }
- return(
-  <>
-    {
-      [{
-        name:"Vivek",
-        role:"Software Developer"
-      },
-      {
-        name:"Sai",
-        role:"Mern Developer"
-      },
-      {
-        name:"harsh",
-        role:"Dev Developer"
-      }].map(eachname=>{
-        const {role,name}=eachname
-        return(
-          <div key={name}>
-        <Greeting text= {`I am ${role}`}>{name}</Greeting>
-
-        <CustomButton text="click me" bgcolor="green" Onpress={()=>clickedme(eachname)}></CustomButton>
-        </div>
-        )
-      })
-    }
-
-
-
-    </>
-  )
+  }
+ 
+  
 }
 
 export default App
