@@ -1,10 +1,10 @@
 import CustomList from "./components/lists/list";
-import { CustomOrderList } from "./components/lists/list";
+// import { CustomOrderList } from "./components/lists/list";
 import MainHeading from "./components/headings/heading.jsx";
 import {SecondaryHeading} from "./components/headings/heading.jsx";
 // import CustomButton from "./components/button/button.jsx"
 import CustomImage from "./components/images/image.jsx";
-import CustomButton from "./components/button/button.jsx";
+// import CustomButton from "./components/button/button.jsx";
 import { recipeData } from "./data/recipedata.js";
 const App = () =>{
   const imageList =[
