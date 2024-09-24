@@ -59,7 +59,7 @@ const App = () =>{
         <CustomList List={eachrecipe.ingredients}></CustomList>
         <SecondaryHeading heading={"Instructions Required"}></SecondaryHeading>
         <CustomList List={eachrecipe.instructions}></CustomList>
-
+f
 
 
       </div>
