@@ -3,7 +3,7 @@
         
     const LoginComponent = (props)=>{
         const {text="Admin"}=props
-   
+    }
         // if(isAdmin){
         //     return(
         //         <h3>Wellcome admin</h3>
