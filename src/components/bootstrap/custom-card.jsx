@@ -1,5 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import CustomDNALoader from '../../loader/loader';
+import InfinteLoader from '../../loader/infinte-loader';
+import CustomToast from '../../toast/toast';
+import InsatgramHeart from '../../heart/instagram-heart';
 
 function CustomRectangleCard({text,title}) {
   return (
@@ -10,6 +14,10 @@ function CustomRectangleCard({text,title}) {
         <Card.Text>
         {text}
         </Card.Text>
+        <CustomDNALoader  height={'100'} width={'100'}/>
+        <InfinteLoader/> 
+        <InsatgramHeart/>
+        <CustomToast  message={"I am card"}/>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
