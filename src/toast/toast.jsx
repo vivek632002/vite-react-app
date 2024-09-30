@@ -7,7 +7,7 @@ const CustomToast=({message})=>{
     const notify=()=>{
         // toast(message);
         toast.success(message, {
-            position: "top-center"
+            position: "top-right"
           });
     
     
