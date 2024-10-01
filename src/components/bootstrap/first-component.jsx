@@ -12,14 +12,14 @@ const FirstComponent=()=>{
   <div className="container mt-5">
     <div className="row">
       <div className="col-sm-4">
-            <CustomRectangleCard title={"Jhon"} text={"React Developer"}/>
+            <CustomRectangleCard title={"Jhon"} text={"React Developer"} />
       </div>
-      <div className="col-sm-4">
+      {/* <div className="col-sm-4">
       <CustomRectangleCard title={"Virat"} text={"React Developer"}/>
       </div>
       <div className="col-sm-4">
       <CustomRectangleCard title={"Manoj"} text={"Devops Engineer"}/>
-      </div>
+      </div> */}
     </div>
   </div>
 </>

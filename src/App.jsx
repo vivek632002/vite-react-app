@@ -15,6 +15,7 @@ import {employeDetails} from "./data/employeedata.js"
 import FirstComponent from "./components/bootstrap/first-component.jsx";
 import YoutubeButton from "./class/youtube-button.jsx";
 import RecipeList from "./recipeListing/recipeList.jsx";
+import CardAddition from "./components/cardAdd/card-add.jsx";
 
 const App = () =>{
   // const type = "GUEST"
@@ -61,14 +62,22 @@ const App = () =>{
 
     // )
 
+    // const onClick = (childData)=>{
+    //   console.log(childData);
+      
+    // }
+
     return(
-      <>
-      <RecipeList/>
+      <div>
+        <CardAddition/>
+        {/* <FirstComponent/> */}
+      {/* <CustomButton  Onpress={onClick}/> */}
+      {/* <RecipeList/> */}
       {/* <YoutubeButton/> */}
       {/* <FirstComponent/> */}
-      </>
+      </div>
     )
-  
+
 }
 
 export default App
