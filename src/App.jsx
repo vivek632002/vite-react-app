@@ -18,7 +18,8 @@ import RecipeList from "./recipeListing/recipeList.jsx";
 import CardAddition from "./components/cardAdd/card-add.jsx";
 import FetchProducts from "./task/task1.jsx";
 import Mounting from "./lifeCycle/mounting.jsx";
-import ParentComponent from "./components/purecomponents/child.jsx";
+import ParentComponent from "./components/purecomponent/parent.jsx";
+
 
 const App = () =>{
   return(
