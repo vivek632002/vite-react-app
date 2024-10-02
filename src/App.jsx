@@ -16,67 +16,19 @@ import FirstComponent from "./components/bootstrap/first-component.jsx";
 import YoutubeButton from "./class/youtube-button.jsx";
 import RecipeList from "./recipeListing/recipeList.jsx";
 import CardAddition from "./components/cardAdd/card-add.jsx";
+import FetchProducts from "./task/task1.jsx";
+import Mounting from "./lifeCycle/mounting.jsx";
+import ParentComponent from "./components/purecomponents/child.jsx";
 
 const App = () =>{
-  // const type = "GUEST"
-  // return(
-// {/* <> */}
-  {/* <LoginComponent isAdmin={false} />
-  <LoginComponent isAdmin={true} />
-  <LoginComponent isAdmin={true} />
-  <LoginComponent isAdmin={null} /> */}
-
-  // switch (type) {
-  //   case "ADMIN":
-  //     return <LoginComponent text ="Admin"/>
-  //     case "USER":
-  //     return <LoginComponent text ="User"/>
-  //     case "GUEST":
-  //     return <LoginComponent text ="Guest"/>
-  
-  //   default:
-  //     return <LoginComponent/>
-
-  // }
-    // return(
-  // <CustomButton/>
-  // <div>
-  //   {
-  //     employeDetails.map(each=>{
-  //       return(
-  //         <>
-  //            <CustomRectangleCard  title={each.name} text={each.designation}/>
-
-  //         </>
-  //       )
-  //     })
-  //   }
-
-  {/* <Greeting/>
-
-  <div className={style.card}>
-    <h5>Hello</h5>
-  </div> */}
-  // </div>
-
-
-    // )
-
-    // const onClick = (childData)=>{
-    //   console.log(childData);
-      
-    // }
-
-    return(
-      <div>
-        <CardAddition/>
-        {/* <FirstComponent/> */}
-      {/* <CustomButton  Onpress={onClick}/> */}
-      {/* <RecipeList/> */}
-      {/* <YoutubeButton/> */}
-      {/* <FirstComponent/> */}
-      </div>
-    )
+  return(
+    <div>
+      <ParentComponent/>
+      {/* <Mounting color="red"/> */}
+      {/* <FetchProducts/> */}
+    </div>
+  )
+    
 
 }
 
