@@ -19,12 +19,16 @@ import CardAddition from "./components/cardAdd/card-add.jsx";
 import FetchProducts from "./task/task1.jsx";
 import Mounting from "./lifeCycle/mounting.jsx";
 import ParentComponent from "./components/purecomponent/parent.jsx";
+import Counter1 from "./hooks/useState/counter.jsx";
+import CustomTodo from "./hooks/useState/todo.jsx";
 
 
 const App = () =>{
   return(
     <div>
-      <ParentComponent/>
+      <CustomTodo/>
+      {/* <Counter1/> */}
+      {/* <ParentComponent/> */}
       {/* <Mounting color="red"/> */}
       {/* <FetchProducts/> */}
     </div>
