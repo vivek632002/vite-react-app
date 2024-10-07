@@ -23,12 +23,14 @@ import Counter1 from "./hooks/useState/counter.jsx";
 import CustomTodo from "./hooks/useState/todo.jsx";
 import UseRefExample from "./hooks/useRef/useRefEX.jsx";
 import UnControlledComponent from "./hooks/uncontrolled/uncontrolled-form.jsx";
+import ControlledForm from "./hooks/contolled/controlled.jsx";
 
 
 const App = () =>{
   return(
     <div>
-      <UnControlledComponent/>
+      <ControlledForm/>
+      {/* <UnControlledComponent/> */}
        
     </div>
   )

@@ -100,9 +100,7 @@ const UncontrolledComponent =()=>{
     <span style={{color:"red"}} >{formErrors?.passwordError}</span>
   </div>
 
-  <button type="submit" className="btn btn-default">
-    Submit
-  </button>
+  
 </form>
 
 
