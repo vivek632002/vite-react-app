@@ -17,8 +17,16 @@ const NavBar=()=>{
             <li className="nav-item"  >
             <NavLink   to={"about"} >About </NavLink>
             </li>
+            <li className="nav-item"  >
+            <NavLink   to={"category"} >Categories </NavLink>
+            </li>
+            <li className="nav-item"  >
+            <NavLink   to={"products"} >Products</NavLink>
+            </li>
            
+
           </ul>
+
         </div>
       </nav>
     )
