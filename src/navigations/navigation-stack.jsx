@@ -9,11 +9,22 @@ import JewelleryScreen from "../screens/jewellery-screen"
 import ElectronicsScreen from "../screens/elctronics-screen"
 import ProductScreen from "../screens/products-screen"
 import ProductDetailScreen from "../screens/product-detailed-screen"
+import { createContext, useState } from "react"
+
+
+ export const UserDetails = createContext()
 
 const NavigationStack=()=>{
 
+    const [username,setUsername]= useState("ram")
+
     return(
 
+        <UserDetails.Provider value={{
+            username:"ram",
+            darkTheme:false,
+            salary:10000
+        }}>
 
         <>
         <NavBar/>
@@ -50,7 +61,8 @@ const NavigationStack=()=>{
         }
         
         </>
-   
+        
+        </UserDetails.Provider>
        
 
 

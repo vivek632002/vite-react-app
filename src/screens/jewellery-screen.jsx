@@ -1,7 +1,11 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { UserDetails } from "../navigations/navigation-stack";
 
  const JewelleryScreen=()=>{
+
+    const {username} =  useContext(UserDetails)
+
     useEffect(()=>{
         fetchData()
     },[])
@@ -24,6 +28,7 @@ import React, { useEffect, useState } from "react";
 
     return(
         <div>
+            <h5>Welcome {username}</h5>
             <h4>Welcome to Jewellery Screen</h4>
             {
                 data.map(each=><>
