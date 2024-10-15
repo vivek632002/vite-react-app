@@ -9,16 +9,25 @@ import JewelleryScreen from "../screens/jewellery-screen"
 import ElectronicsScreen from "../screens/elctronics-screen"
 import ProductScreen from "../screens/products-screen"
 import ProductDetailScreen from "../screens/product-detailed-screen"
-import { createContext, useState } from "react"
+import { createContext, useReducer, useState } from "react"
+import { countReducer, initialState } from "./counterHelper"
 
 
  export const UserDetails = createContext()
+
+export const GlobalCounter = createContext()
 
 const NavigationStack=()=>{
 
     const [username,setUsername]= useState("ram")
 
+    const[currentState,dispatch] = useReducer(countReducer,initialState)
+
     return(
+
+        <GlobalCounter.Provider  value={
+           { currentState:currentState,dispatch:dispatch}
+        }>
 
         <UserDetails.Provider value={{
             username:"ram",
@@ -64,6 +73,7 @@ const NavigationStack=()=>{
         
         </UserDetails.Provider>
        
+        </GlobalCounter.Provider>
 
 
     )
