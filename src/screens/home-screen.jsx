@@ -1,3 +1,4 @@
+import React from "react";
 import withCounter from "../Hoc/withCounter";
 import withProfile from "../Hoc/withProfile"
 import UseEffectExample from "../hooks/useEffect/useEffectEX"
@@ -20,4 +21,4 @@ const HomeScreen =({count,incrementCount})=>{
     )
 }
 
-export default React.memo(withCounter(HomeScreen)) 
+export default React .memo(withCounter(HomeScreen)) 
